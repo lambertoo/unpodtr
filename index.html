@@ -3,24 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Page</title>
+  <title>Styled Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: linear-gradient(120deg, #e0f7fa, #f1f8e9);
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
     h1 {
-      color: #333;
+      color: #2c3e50;
+      margin-bottom: 15px;
     }
+
     p {
       color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #004d40;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>welcome to my page where we learn alot</p>
+  <div class="container">
+    <h1>Hello, World! 🌍</h1>
+    <p>This page now has some CSS styling.</p>
+    <button class="btn">Click Me</button>
+  </div>
 </body>
 </html>
